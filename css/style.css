@@ -1,0 +1,415 @@
+body{
+  font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+/* NavBar */
+
+
+.started{
+  background: #F57C00;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  height: 3rem;
+  width: 8rem;
+  cursor: pointer;
+}
+
+.started:hover{
+  background: #FF9800
+}
+
+.nav a.started{
+  color: #fff;
+  background: #F57C00;
+  border: none;
+  border-radius: 1px;
+}
+.nav a.started:hover{
+  color: #fff;
+  background: #FF9800;
+  border: none;
+  border-radius: 1px;
+}
+nav.navbar.transparent {
+  background-color:white;
+  color: black;
+  padding: 10px
+ }
+ nav.navbar.transparent a{
+  color: black;
+ }
+
+ nav.navbar.transparent a.started{
+  color: #fff;
+ }
+
+nav.navbar{
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.collapse{
+  padding: 5px 50px 0px 50px
+}
+
+.navbar-nav > li > a { 
+  background-color: transparent;
+  color: #fff; 
+  font-size: 17px;
+  
+}
+
+
+/* carousel */
+.ImgBrightness{
+  filter: brightness(0.60);
+
+}
+
+
+
+/* Slogan section */
+.sloganSection{
+  padding: 3%;
+background: #FAFAFA
+}
+.slogan{
+  text-align: center
+}
+.egypt{
+  font-size: 15px;
+  color: #616161;
+}
+
+.sloganText{
+  color: #000;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.enterprise{
+  background-color: #F57C00;
+  border: none;
+  width: 10rem;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 11px
+}
+
+.enterprise:hover{
+  background-color: #FF9800;
+}
+
+/* Line */
+.line-icon {
+  display: inline-block;
+  height: 6px;
+  width: 30px;
+  position: relative;
+}
+
+.line-icon:before, .line-icon:after {
+  height: 2px;
+  width: 20px;
+  content: "";
+  background-color: #282828;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.line-icon:after {
+  bottom: 0;
+  right: inherit;
+  left: 0;
+  top: inherit;
+}
+
+/* Clients Section */
+.clientsSection{
+  padding: 3%;
+}
+
+.allClients{
+  background-color: #F57C00;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 6vh;
+  width: 10rem;
+  border-radius: 2px;
+}
+
+.allClients:hover{
+  background-color: #FF9800;
+}
+
+
+
+/* Project Section */
+.projectsSection{
+  padding: 3%;
+  background: #FAFAFA
+}
+
+
+.projects{
+  text-align: center;
+}
+
+/* projects filter section */
+.filter-button{
+  font-size: 18px;
+  background: none;
+  text-align: center;
+  color: #000;
+  border-radius: 20px
+}
+
+.active, .filter-button:hover{
+  color: #fff;
+  background-color: #F57C00
+}
+
+
+.caseStudy{
+color: #000;
+background: #fff;
+border: none;
+border-radius: 1px;
+margin: 80px 50px;
+}
+
+.filter-button:focus{
+  background-color: #F57C00;
+  border: none;
+  color: #fff;
+  outline: none;
+  box-shadow:none;
+}
+
+/* projects case study */
+.box {
+  height: 306px;
+}
+.box img {
+  position: absolute;
+  width: 280px;
+  height: 300px;
+  left: 0;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+.box .overbox {
+  background-color: #F57C00;
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 280px;
+  height: 300px;
+  padding: 10%;
+}
+.box:hover .overbox {
+  opacity: 0.9;
+}
+.box .overtext { 
+  text-align: center;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+}
+@media screen and (max-width: 900px){
+
+  #MobileLogo{
+    width: 40%;
+    padding:0% 0% 5% 0%
+  }
+  .caseStudy{
+    color: #000;
+background: #fff;
+border: none;
+border-radius: 1px;
+margin: 70px 25px;
+    }
+  .box {
+    height: 240px;
+  }
+  .box .overbox { 
+  width: 231px;
+  height: 234px;
+  padding: 10%;
+}
+  .box img{
+    width:231px;
+    height: 234px;
+  }  
+}
+.box .tagline {
+  font-size: 1.25em;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+}
+.box:hover .tagline,
+.box:focus .tagline {
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+
+/* services section */
+
+.servicesSection{
+  padding: 3%
+}
+.row.vdivide [class*='col-']:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 0rem;
+}
+
+
+/* Clients Feedback */
+.quotesSection{
+  padding: 3%;
+  background: #fbfbfb
+}
+.quote-card {
+  background: #fff;
+  color: #222222;
+  padding: 20px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(34, 34, 34, 0.12);
+  position: relative;
+  overflow: hidden;
+  min-height: 120px;
+}
+.quote-card p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 80%;
+}
+.quote-card cite {
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  font-weight: 200;
+  opacity: 0.8;
+}
+.quote-card:before {
+  font-family: Georgia, serif;
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 5em;
+  color: rgba(238, 238, 238, 0.8);
+  font-weight: normal;
+}
+.quote-card:after {
+  font-family: Georgia, serif;
+  content: "”";
+  position: absolute;
+  bottom: -110px;
+  line-height: 100px;
+  right: -32px;
+  font-size: 25em;
+  color: rgba(238, 238, 238, 0.8);
+  font-weight: normal;
+}
+
+
+/* getStarted Section */
+.getStarted{
+  padding: 3%;
+  background: #F5F5F5;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center
+}
+
+#inlineFormInputName{
+  height: 7vh;
+}
+
+form{
+margin-left: 5%
+}
+
+.talkBtn{
+  color: #fff;
+  background: #F57C00;
+  border: none;
+  cursor: pointer;
+  font-size: 19px;
+  border-radius: 5px;
+  height: 7vh;
+  width: 11rem
+}
+
+.talkBtn:hover{
+  background: #FF9800;
+  
+}
+
+/* Footer */
+.footerSection{
+  padding: 3%;
+  background: #000000;
+  color: #fff
+}
+
+footer a{
+  color: gray;
+}
+footer a:hover{
+  color: #F57C00;
+  text-decoration: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
